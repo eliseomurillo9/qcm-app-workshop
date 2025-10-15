@@ -1,0 +1,731 @@
+{
+  "title": "Quel sorcier de l'EPSI es-tu ?",
+  "archtypes": [
+    "Cryptomancien",
+    "Architectomage",
+    "Datalchimiste",
+    "Technomancien"
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "text": "Un serveur tombe en panne lors d’une démo importante. Quelle est ta première réaction ?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Je cherche immédiatement la faille de sécurité ou le bug caché.",
+          "scores": {
+            "Cryptomancien": 3,
+            "Architectomage": 1,
+            "Datalchimiste": 1,
+            "Technomancien": 0
+          }
+        },
+        {
+          "id": "B",
+          "text": "Je redémarre la structure avec un plan B déjà préparé.",
+          "scores": {
+            "Cryptomancien": 1,
+            "Architectomage": 3,
+            "Datalchimiste": 1,
+            "Technomancien": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "Je note les données d’erreur pour en tirer des patterns plus tard.",
+          "scores": {
+            "Cryptomancien": 0,
+            "Architectomage": 1,
+            "Datalchimiste": 3,
+            "Technomancien": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Ta baguette magique technologique préférée serait :",
+      "options": [
+        {
+          "id": "A",
+          "text": "Un pare-feu intelligent capable de prédire les attaques.",
+          "scores": {
+            "Cryptomancien": 3,
+            "Architectomage": 1,
+            "Datalchimiste": 1,
+            "Technomancien": 0
+          }
+        },
+        {
+          "id": "B",
+          "text": "Une plateforme modulaire qui relie tous les systèmes entre eux.",
+          "scores": {
+            "Cryptomancien": 0,
+            "Architectomage": 3,
+            "Datalchimiste": 1,
+            "Technomancien": 2
+          }
+        },
+        {
+          "id": "C",
+          "text": "Un algorithme capable d’anticiper les comportements humains.",
+          "scores": {
+            "Cryptomancien": 1,
+            "Architectomage": 0,
+            "Datalchimiste": 3,
+            "Technomancien": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Quand tu codes, ton environnement idéal c’est :",
+      "options": [
+        {
+          "id": "A",
+          "text": "Une grotte numérique isolée du monde.",
+          "scores": {
+            "Cryptomancien": 3,
+            "Architectomage": 1,
+            "Datalchimiste": 1,
+            "Technomancien": 0
+          }
+        },
+        {
+          "id": "B",
+          "text": "Un grand bureau avec un tableau plein de schémas d’architecture.",
+          "scores": {
+            "Cryptomancien": 1,
+            "Architectomage": 3,
+            "Datalchimiste": 1,
+            "Technomancien": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "Un open-space où l’on expérimente en équipe.",
+          "scores": {
+            "Cryptomancien": 0,
+            "Architectomage": 1,
+            "Datalchimiste": 2,
+            "Technomancien": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Quel langage de programmation t’attire le plus par sa 'magie' ?",
+      "options": [
+        {
+          "id": "A",
+          "text": "C ou Rust, pour la maîtrise du bas niveau.",
+          "scores": {
+            "Cryptomancien": 3,
+            "Architectomage": 2,
+            "Datalchimiste": 1,
+            "Technomancien": 0
+          }
+        },
+        {
+          "id": "B",
+          "text": "Python ou R, pour révéler les secrets des données.",
+          "scores": {
+            "Cryptomancien": 0,
+            "Architectomage": 1,
+            "Datalchimiste": 3,
+            "Technomancien": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "JavaScript ou Swift, pour donner vie à la magie du web.",
+          "scores": {
+            "Cryptomancien": 0,
+            "Architectomage": 1,
+            "Datalchimiste": 1,
+            "Technomancien": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Tu dois concevoir une solution pour ton équipe. Tu commences par :",
+      "options": [
+        {
+          "id": "A",
+          "text": "Protéger l’infrastructure avant tout.",
+          "scores": {
+            "Cryptomancien": 3,
+            "Architectomage": 1,
+            "Datalchimiste": 0,
+            "Technomancien": 0
+          }
+        },
+        {
+          "id": "B",
+          "text": "Dessiner l’architecture globale.",
+          "scores": {
+            "Cryptomancien": 0,
+            "Architectomage": 3,
+            "Datalchimiste": 1,
+            "Technomancien": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "Analyser les données du projet avant de proposer.",
+          "scores": {
+            "Cryptomancien": 0,
+            "Architectomage": 1,
+            "Datalchimiste": 3,
+            "Technomancien": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "text": "Face à un défi technique, tu es plutôt :",
+      "options": [
+        {
+          "id": "A",
+          "text": "Le stratège discret qui prépare un contre-sort précis.",
+          "scores": {
+            "Cryptomancien": 3,
+            "Architectomage": 1,
+            "Datalchimiste": 1,
+            "Technomancien": 0
+          }
+        },
+        {
+          "id": "B",
+          "text": "Le bâtisseur visionnaire qui structure tout.",
+          "scores": {
+            "Cryptomancien": 0,
+            "Architectomage": 3,
+            "Datalchimiste": 1,
+            "Technomancien": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "Le créatif qui tente une approche inédite.",
+          "scores": {
+            "Cryptomancien": 0,
+            "Architectomage": 1,
+            "Datalchimiste": 1,
+            "Technomancien": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "text": "Ton patronus numérique serait :",
+      "options": [
+        {
+          "id": "A",
+          "text": "Un dragon de pare-feu.",
+          "scores": {
+            "Cryptomancien": 3,
+            "Architectomage": 1,
+            "Datalchimiste": 0,
+            "Technomancien": 0
+          }
+        },
+        {
+          "id": "B",
+          "text": "Un phénix codé en IA auto-régénérante.",
+          "scores": {
+            "Cryptomancien": 1,
+            "Architectomage": 1,
+            "Datalchimiste": 3,
+            "Technomancien": 2
+          }
+        },
+        {
+          "id": "C",
+          "text": "Un golem d’algorithmes coopérants.",
+          "scores": {
+            "Cryptomancien": 0,
+            "Architectomage": 2,
+            "Datalchimiste": 1,
+            "Technomancien": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "text": "Tu dois intégrer une nouvelle technologie complexe :",
+      "options": [
+        {
+          "id": "A",
+          "text": "Je lis la doc complète avant de commencer.",
+          "scores": {
+            "Cryptomancien": 2,
+            "Architectomage": 3,
+            "Datalchimiste": 1,
+            "Technomancien": 0
+          }
+        },
+        {
+          "id": "B",
+          "text": "Je teste directement en environnement de dev.",
+          "scores": {
+            "Cryptomancien": 0,
+            "Architectomage": 1,
+            "Datalchimiste": 2,
+            "Technomancien": 3
+          }
+        },
+        {
+          "id": "C",
+          "text": "Je cherche les failles potentielles avant tout.",
+          "scores": {
+            "Cryptomancien": 3,
+            "Architectomage": 0,
+            "Datalchimiste": 0,
+            "Technomancien": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "text": "Si tu pouvais enseigner une matière à Poudlard EPSI, ce serait :",
+      "options": [
+        {
+          "id": "A",
+          "text": "Défense contre les cyberattaques.",
+          "scores": {
+            "Cryptomancien": 3,
+            "Architectomage": 0,
+            "Datalchimiste": 1,
+            "Technomancien": 0
+          }
+        },
+        {
+          "id": "B",
+          "text": "Conception des sorts numériques distribués.",
+          "scores": {
+            "Cryptomancien": 0,
+            "Architectomage": 3,
+            "Datalchimiste": 1,
+            "Technomancien": 2
+          }
+        },
+        {
+          "id": "C",
+          "text": "Analyse prédictive des comportements magiques.",
+          "scores": {
+            "Cryptomancien": 0,
+            "Architectomage": 1,
+            "Datalchimiste": 3,
+            "Technomancien": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "text": "Quel artefact magique t’aiderait le plus en cours d’informatique ?",
+      "options": [
+        {
+          "id": "A",
+          "text": "La cape d’invisibilité (pour observer sans être vu).",
+          "scores": {
+            "Cryptomancien": 3,
+            "Architectomage": 0,
+            "Datalchimiste": 1,
+            "Technomancien": 0
+          }
+        },
+        {
+          "id": "B",
+          "text": "Le retourneur de temps (pour tester chaque scénario).",
+          "scores": {
+            "Cryptomancien": 1,
+            "Architectomage": 2,
+            "Datalchimiste": 3,
+            "Technomancien": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "La plume à papote (pour générer du code automatiquement).",
+          "scores": {
+            "Cryptomancien": 0,
+            "Architectomage": 1,
+            "Datalchimiste": 1,
+            "Technomancien": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "text": "Ta plus grande force en projet collectif est :",
+      "options": [
+        {
+          "id": "A",
+          "text": "Trouver les failles et sécuriser.",
+          "scores": {
+            "Cryptomancien": 3,
+            "Architectomage": 1,
+            "Datalchimiste": 0,
+            "Technomancien": 0
+          }
+        },
+        {
+          "id": "B",
+          "text": "Organiser et répartir les tâches.",
+          "scores": {
+            "Cryptomancien": 0,
+            "Architectomage": 3,
+            "Datalchimiste": 1,
+            "Technomancien": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "Encourager et inspirer l’équipe.",
+          "scores": {
+            "Cryptomancien": 0,
+            "Architectomage": 1,
+            "Datalchimiste": 1,
+            "Technomancien": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "text": "Tu préfères un projet :",
+      "options": [
+        {
+          "id": "A",
+          "text": "Où la sécurité est le cœur du défi.",
+          "scores": {
+            "Cryptomancien": 3,
+            "Architectomage": 1,
+            "Datalchimiste": 0,
+            "Technomancien": 0
+          }
+        },
+        {
+          "id": "B",
+          "text": "Avec une architecture innovante à concevoir.",
+          "scores": {
+            "Cryptomancien": 0,
+            "Architectomage": 3,
+            "Datalchimiste": 1,
+            "Technomancien": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "Basé sur l’analyse et les données réelles.",
+          "scores": {
+            "Cryptomancien": 0,
+            "Architectomage": 1,
+            "Datalchimiste": 3,
+            "Technomancien": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "text": "Quand tu rencontres un bug mystérieux :",
+      "options": [
+        {
+          "id": "A",
+          "text": "Je traque chaque octet jusqu’à la racine.",
+          "scores": {
+            "Cryptomancien": 3,
+            "Architectomage": 1,
+            "Datalchimiste": 1,
+            "Technomancien": 0
+          }
+        },
+        {
+          "id": "B",
+          "text": "Je reconstruis le système dans un environnement test.",
+          "scores": {
+            "Cryptomancien": 1,
+            "Architectomage": 3,
+            "Datalchimiste": 1,
+            "Technomancien": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "Je demande à l’équipe d’échanger des hypothèses.",
+          "scores": {
+            "Cryptomancien": 0,
+            "Architectomage": 1,
+            "Datalchimiste": 2,
+            "Technomancien": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "text": "Ta potion préférée de développeur contient :",
+      "options": [
+        {
+          "id": "A",
+          "text": "Des lignes de code propres et bien indentées.",
+          "scores": {
+            "Cryptomancien": 2,
+            "Architectomage": 3,
+            "Datalchimiste": 1,
+            "Technomancien": 0
+          }
+        },
+        {
+          "id": "B",
+          "text": "Des jeux de données fascinants.",
+          "scores": {
+            "Cryptomancien": 0,
+            "Architectomage": 1,
+            "Datalchimiste": 3,
+            "Technomancien": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "Des frameworks modernes et réactifs.",
+          "scores": {
+            "Cryptomancien": 0,
+            "Architectomage": 1,
+            "Datalchimiste": 1,
+            "Technomancien": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "text": "Si tu devais rejoindre un club à Poudlard EPSI :",
+      "options": [
+        {
+          "id": "A",
+          "text": "Le club d’éthique numérique.",
+          "scores": {
+            "Cryptomancien": 3,
+            "Architectomage": 1,
+            "Datalchimiste": 0,
+            "Technomancien": 0
+          }
+        },
+        {
+          "id": "B",
+          "text": "Le club des architectes logiciels.",
+          "scores": {
+            "Cryptomancien": 0,
+            "Architectomage": 3,
+            "Datalchimiste": 1,
+            "Technomancien": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "Le club d’expérimentation IA & robotique.",
+          "scores": {
+            "Cryptomancien": 0,
+            "Architectomage": 1,
+            "Datalchimiste": 2,
+            "Technomancien": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "text": "Quelle phrase te décrit le mieux ?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Je suis un gardien du code.",
+          "scores": {
+            "Cryptomancien": 3,
+            "Architectomage": 1,
+            "Datalchimiste": 0,
+            "Technomancien": 0
+          }
+        },
+        {
+          "id": "B",
+          "text": "Je suis un bâtisseur d’univers numériques.",
+          "scores": {
+            "Cryptomancien": 0,
+            "Architectomage": 3,
+            "Datalchimiste": 1,
+            "Technomancien": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "Je suis un créateur d’expériences interactives.",
+          "scores": {
+            "Cryptomancien": 0,
+            "Architectomage": 1,
+            "Datalchimiste": 1,
+            "Technomancien": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "text": "Quelle serait ta matière préférée à l’EPSI ?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Cybersécurité et cryptographie.",
+          "scores": {
+            "Cryptomancien": 3,
+            "Architectomage": 1,
+            "Datalchimiste": 0,
+            "Technomancien": 0
+          }
+        },
+        {
+          "id": "B",
+          "text": "Architecture logicielle et DevOps.",
+          "scores": {
+            "Cryptomancien": 0,
+            "Architectomage": 3,
+            "Datalchimiste": 1,
+            "Technomancien": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "Intelligence artificielle et data science.",
+          "scores": {
+            "Cryptomancien": 0,
+            "Architectomage": 1,
+            "Datalchimiste": 3,
+            "Technomancien": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "text": "Tu te sens plus à l’aise quand tu :",
+      "options": [
+        {
+          "id": "A",
+          "text": "Protéges un système contre les menaces.",
+          "scores": {
+            "Cryptomancien": 3,
+            "Architectomage": 1,
+            "Datalchimiste": 0,
+            "Technomancien": 0
+          }
+        },
+        {
+          "id": "B",
+          "text": "Orchestres plusieurs services en harmonie.",
+          "scores": {
+            "Cryptomancien": 0,
+            "Architectomage": 3,
+            "Datalchimiste": 1,
+            "Technomancien": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "Crées une interface magique et intuitive.",
+          "scores": {
+            "Cryptomancien": 0,
+            "Architectomage": 1,
+            "Datalchimiste": 1,
+            "Technomancien": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "text": "Un bon sort de code doit être :",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sécurisé et robuste.",
+          "scores": {
+            "Cryptomancien": 3,
+            "Architectomage": 1,
+            "Datalchimiste": 0,
+            "Technomancien": 0
+          }
+        },
+        {
+          "id": "B",
+          "text": "Bien structuré et scalable.",
+          "scores": {
+            "Cryptomancien": 0,
+            "Architectomage": 3,
+            "Datalchimiste": 1,
+            "Technomancien": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "Interactif et fluide.",
+          "scores": {
+            "Cryptomancien": 0,
+            "Architectomage": 1,
+            "Datalchimiste": 1,
+            "Technomancien": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "text": "Si tu pouvais lancer un sort technologique, tu ferais :",
+      "options": [
+        {
+          "id": "A",
+          "text": "Un bouclier invincible pour protéger les données.",
+          "scores": {
+            "Cryptomancien": 3,
+            "Architectomage": 1,
+            "Datalchimiste": 0,
+            "Technomancien": 0
+          }
+        },
+        {
+          "id": "B",
+          "text": "Un pont magique entre tous les systèmes du monde.",
+          "scores": {
+            "Cryptomancien": 0,
+            "Architectomage": 3,
+            "Datalchimiste": 1,
+            "Technomancien": 2
+          }
+        },
+        {
+          "id": "C",
+          "text": "Une IA capable d’apprendre la magie humaine.",
+          "scores": {
+            "Cryptomancien": 0,
+            "Architectomage": 1,
+            "Datalchimiste": 3,
+            "Technomancien": 1
+          }
+        }
+      ]
+    }
+  ]
+}
