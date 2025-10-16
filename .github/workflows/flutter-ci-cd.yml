@@ -1,0 +1,59 @@
+name: Flutter CI/CD Express
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  analyze-test-build:
+    name: Analyze, Test & Build Flutter App
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1️⃣ Cloner le dépôt
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # 2️⃣ Installer Flutter
+      - name: Set up Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.22.0'  # adapte selon ton SDK
+
+      # 3️⃣ Installer les dépendances
+      - name: Get dependencies
+        run: flutter pub get
+
+      # 4️⃣ Vérifier le code
+      - name: Analyze code
+        run: flutter analyze
+
+      # 5️⃣ Lancer les tests unitaires
+      - name: Run tests
+        run: flutter test --coverage
+
+      # 6️⃣ Construire l’APK Android
+      - name: Build Android APK
+        run: flutter build apk --release
+
+      # 7️⃣ Sauvegarder l’artefact (APK)
+      - name: Upload APK Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: flutter-release-apk
+          path: build/app/outputs/flutter-apk/app-release.apk
+
+      # 8️⃣ Construire le Docker (pour test ou intégration)
+      - name: Build Docker image
+        run: docker build -t flutter-qcm-app:latest .
+
+      # 9️⃣ Sauvegarder l’image Docker en artefact
+      - name: Save Docker image
+        run: docker save flutter-qcm-app:latest -o flutter-qcm-app.tar
+      - name: Upload Docker image artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: flutter-docker-image
+          path: flutter-qcm-app.tar
